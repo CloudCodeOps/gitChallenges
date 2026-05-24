@@ -21,7 +21,7 @@ response = ec2.run_instances(
     TagSpecifications=[
         {
             "ResourceType": "instance",
-            "Tags": [{"Key": "Name", "Value": "MyEC2Instance"}],
+            "Tags": [{"Key": "Name", "Value : "linux"}],
         }
     ],
     BlockDeviceMappings=[
