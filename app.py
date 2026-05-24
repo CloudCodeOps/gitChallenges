@@ -11,8 +11,8 @@ ec2 = boto3.client(
 
 # ── Create EC2 Instance ──────────────────────────────────────────
 response = ec2.run_instances(
-    ImageId="ami-0c02fb55956c7d316",   # Amazon Linux 2 (us-east-1)
-    InstanceType="t2.micro",           # Free tier eligible
+    ImageId="ami-windows",   # Amazon Linux 2 (us-east-1)
+    InstanceType="t2.small",           # Free tier eligible
     MinCount=1,
     MaxCount=1,
     KeyName="your-key-pair-name",      # Must exist in AWS console
